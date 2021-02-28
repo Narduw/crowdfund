@@ -8,7 +8,7 @@ function App() {
       <Hero title='crowdfund'/>
       <Main/>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

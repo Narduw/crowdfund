@@ -1,13 +1,13 @@
 function Header() {
-    return <div className='header'>
+    return <section className='header'>
         <span className="project-logo"></span>
-        <div className="project-name">Mastercraft Bamboo Monitor Riser</div>
-        <div className="project-desc">A beatiful handcrafted moniotor stand to reduce neck and eye strain.</div>
+        <h1 className="project-name">Mastercraft Bamboo Monitor Riser</h1>
+        <span className="project-desc">A beatiful handcrafted moniotor stand to reduce neck and eye strain.</span>
         <div className="btn-container">
             <button className="btn primary-btn">Back this project</button>
             <button className="btn bookmark-btn"/>
         </div>
-    </div>
+    </section>
 }
 
 export default Header
