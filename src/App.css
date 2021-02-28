@@ -2,7 +2,13 @@ body {
   font-family: 'Commissioner', sans-serif;
   font-weight: medium;
   font-size: 16px;
+  line-height: 1.3em;
   background-color: hsla(0, 0%, 48%, 0.1);
+}
+
+.description {
+  color: hsla(0, 0%, 48%, 0.75);
+  font-size: smaller;
 }
 
 .hero {
@@ -16,14 +22,14 @@ body {
 
 .hero-content {
   display: flex;
-  padding: 30px 25px;
+  padding: 27px 22px;
   justify-content: space-between;
   align-items: center;
 }
 
 .hero-title {
   font-weight: bold;
-  font-size: large;
+  font-size: x-large;
 }
 
 .menu {
@@ -33,14 +39,18 @@ body {
   background-repeat: no-repeat;
 }
 
+.main {
+  margin-bottom: 50px;
+}
+
 section {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin: 20px 30px 0px 30px;
-  border-radius: 10px;
-  padding: 30px 30px;
+  margin: 25px 25px 0px 25px;
+  border-radius: 5px;
+  padding: 30px 25px;
   background-color: white;
 }
 
@@ -51,22 +61,21 @@ section {
 }
 
 .project-logo {
-  width: 56px;
-  height: 56px;
+  width: 50px;
+  height: 50px;
+  background-size: 50px 50px;
   background-image: url('./icons/logo-mastercraft.svg');
   background-repeat: no-repeat;
-  margin-top: -69px;
+  margin-top: -65px;
 }
 
 .project-name {
-  font-weight: bold;
   font-size: larger;
   margin-top: 20px;
+  padding: 0 10px;
 }
 
 .project-desc {
-  font-size: smaller;
-  color: hsla(0, 0%, 48%, 0.75);
   margin-bottom: 20px;
 }
 
@@ -83,7 +92,7 @@ section {
 }
 
 .primary-btn {
-  max-width: 200px;
+  max-width: 210px;
   flex-grow: 2;
   float: left;
   color: white;
@@ -95,7 +104,7 @@ section {
 .bookmark-btn {
   width: 50px;
   height: 50px;
-  margin-left: 10px;
+  margin-left: 0px;
   background-size: 50px, 50px;
   background-image: url('./icons/icon-bookmark.svg');
   background-repeat: no-repeat;
@@ -109,16 +118,11 @@ section {
 .stat-tracker > .value {
   font-size: xx-large;
   font-weight: bold;
-  margin-bottom: 5px;
-}
-
-.stat-tracker > .description {
-  font-size: smaller;
-  color: hsl(0, 0%, 48%, 0.75);
+  margin-bottom: 15px;
 }
 
 .separator {
-  margin: 20px 0px 20px 0px;
+  margin: 20px 0px 30px 0px;
   width: 70px;
   height: 0;
   border: 1px solid hsl(0, 0%, 48%, 0.2);
@@ -129,13 +133,49 @@ section {
   height: 10px;
   border-radius: 5px;
   background-color: hsl(0, 0%, 48%, 0.1);
-  margin-top: 30px;
+  margin-top: 25px;
 }
 
 .progress-bar > .progress {
   height: 100%;
   background-color: hsl(176, 50%, 47%);
   border-radius: 5px;
+}
+
+.project-rewards {
+  text-align: initial;
+  align-items: initial;
+}
+
+.project-rewards > .title {
+  margin-top: 0;
+  font-size: large;
+}
+
+.reward {
+  border: 1px solid hsl(0, 0%, 48%, 0.2);
+  border-radius: 10px;
+  padding: 20px 20px;
+}
+
+.reward > .name {
+  font-size: smaller;
+  margin: 0;
+}
+
+.reward > .min-price {
+  font-size: smaller;
+  color:hsl(176, 50%, 65%);
+  margin-top: 0;
+}
+
+.reward:not(:first-child) {
+  margin-top: 20px;
+}
+
+.reward .remaining {
+  font-weight: bold;
+  font-size: xx-large;
 }
 
 @media only screen and (min-width: 768px) {
